@@ -1,9 +1,9 @@
-2D Graphics Editor in C
+## 2D Graphics Editor in C
 
-#Project Description
+## Project Description
 This project is a simple 2D Graphics Editor developed in C using a 2D character array
 
-#Features
+## Features
 Draw Line
 Draw Rectangle
 Draw Triangle
@@ -11,12 +11,12 @@ Draw Circle
 Delete Area
 Display Canvas
 
-#Concepts Used
+## Concepts Used
 Arrays
 Functions
 Loops
 Switch Case
 Menu Driven Program
 
-#Language
+## Language
 C Programming
