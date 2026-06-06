@@ -5,27 +5,19 @@
 
 char a[ROWS][COLS];
 
-void clearCanvas()
-{
+void clearCanvas(){
     int i,j;
-
-    for(i=0;i<ROWS;i++)
-    {
-        for(j=0;j<COLS;j++)
-        {
+    for(i=0;i<ROWS;i++){
+        for(j=0;j<COLS;j++){
             a[i][j]='_';
         }
     }
 }
 
-void display()
-{
+void display(){
     int i,j;
-
-    for(i=0;i<ROWS;i++)
-    {
-        for(j=0;j<COLS;j++)
-        {
+    for(i=0;i<ROWS;i++){
+        for(j=0;j<COLS;j++){
             printf("%c",a[i][j]);
         }
         printf("\n");
@@ -39,8 +31,7 @@ void drawLine()
     printf("Enter row number: ");
     scanf("%d",&row);
 
-    for(i=0;i<COLS;i++)
-    {
+    for(i=0;i<COLS;i++){
         a[row][i]='*';
     }
 }
@@ -52,10 +43,8 @@ void drawRectangle()
     printf("Enter row column height width: ");
     scanf("%d%d%d%d",&r,&c,&h,&w);
 
-    for(i=r;i<r+h;i++)
-    {
-        for(j=c;j<c+w;j++)
-        {
+    for(i=r;i<r+h;i++){
+        for(j=c;j<c+w;j++){
             if(i<ROWS && j<COLS)
                 a[i][j]='*';
         }
@@ -69,8 +58,7 @@ void drawTriangle()
     printf("Enter row column height: ");
     scanf("%d%d%d",&r,&c,&h);
 
-    for(i=0;i<h;i++)
-    {
+    for(i=0;i<h;i++){
         for(j=0;j<=i;j++)
         {
             if(r+i<ROWS && c+j<COLS)
@@ -93,8 +81,7 @@ void drawCircle()
             int dx=i-x;
             int dy=j-y;
 
-            if(dx*dx+dy*dy<=r*r)
-            {
+            if(dx*dx+dy*dy<=r*r){
                 a[i][j]='*';
             }
         }
@@ -108,20 +95,16 @@ void deleteArea()
     printf("Enter row column height width: ");
     scanf("%d%d%d%d",&r,&c,&h,&w);
 
-    for(i=r;i<r+h;i++)
-    {
-        for(j=c;j<c+w;j++)
-        {
+    for(i=r;i<r+h;i++){
+        for(j=c;j<c+w;j++){
             if(i<ROWS && j<COLS)
                 a[i][j]='_';
         }
     }
 }
 
-int main()
-{
+int main(){
     int ch;
-
     clearCanvas();
 
     do
