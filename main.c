@@ -5,7 +5,7 @@
 
 char a[ROWS][COLS];
 
-// Function to clear the canvas
+//Function to clear the canvas
 void clearCanvas(){
     int i,j;
     for(i=0;i<ROWS;i++){
