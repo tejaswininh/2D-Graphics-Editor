@@ -41,7 +41,7 @@ void drawRectangle()
 {
     int r,c,h,w,i,j;
 
-    printf("Enter row column height width: ");
+    printf("Enter starting row, starting column, height, and width: ");
     scanf("%d%d%d%d",&r,&c,&h,&w);
 
     for(i=r;i<r+h;i++){
